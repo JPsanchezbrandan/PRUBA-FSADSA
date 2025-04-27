@@ -1,3 +1,12 @@
+<h1>Wiki - Proyecto Procoders</h1>
+
+<p>
+  Bienvenido a la documentación oficial del proyecto ProfeSort del equipo <strong>Procoders</strong>.<br>
+</p>
+
+
+<hr>
+
 <div align="center">
   <h2>📂 Índice de contenidos</h2>
   <ul style="list-style: none; padding-left: 0;">
@@ -19,3 +28,50 @@
     </li>
   </ul>
 </div>
+
+<hr>
+
+<div align="center">
+
+  <h2>Equipo de Desarrollo</h2>
+
+  <table>
+    <tr>
+      <td>
+        <a href="https://github.com/Malvadapapa" target="_blank">Cristian Vargas</a><br>
+        <strong>Scrum Master</strong><br>
+        <a href="mailto:cristian.v62@gmail.com">cristian.v62@gmail.com</a>
+      </td>
+      <td>
+        <a href="https://github.com/danicba03" target="_blank">Daniel Paez</a><br>
+        Desarrollador<br>
+        <a href="mailto:dani.mercadolibre03@gmail.com">dani.mercadolibre03@gmail.com</a>
+      </td>
+      <td>
+        <a href="https://github.com/juangioda" target="_blank">Juan Ignacio Gioda</a><br>
+        Desarrollador<br>
+        <a href="mailto:juangioda@gmail.com">juangioda@gmail.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/JPsanchezbrandan" target="_blank">Juan Pablo Sánchez</a><br>
+        Desarrollador<br>
+        <a href="mailto:jpsanchezbrandan@gmail.com">jpsanchezbrandan@gmail.com</a>
+      </td>
+      <td>
+        <a href="https://github.com/KaryQuinteros" target="_blank">Karina Quinteros</a><br>
+        Desarrolladora<br>
+        <a href="mailto:karinaq38@gmail.com">karinaq38@gmail.com</a>
+      </td>
+      <td>
+        <a href="https://github.com/lauzarg" target="_blank">Laura Zarate</a><br>
+        Desarrolladora<br>
+        <a href="mailto:lauzarg@gmail.com">lauzarg@gmail.com</a>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+<hr>
