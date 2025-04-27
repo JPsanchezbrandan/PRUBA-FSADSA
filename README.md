@@ -7,7 +7,7 @@
 
 ###
 
-<h2 align="left">⭐ Funcionalidades Principales (Primera Etapa)</h2>
+<h2 align="left">Funcionalidades Principales (Primera Etapa)</h2>
 
 ###
 
@@ -78,7 +78,7 @@
 
 ###
 
-<h2 align="left">📁Estructura de carpetas y justificacion</h2>
+<h2 align="left">Estructura de carpetas y justificacion</h2>
 
 ````bash
 maqueta/
@@ -101,7 +101,7 @@ backend/
 
 ###
 
-<h2 align="left">👷‍♂️ Instrucciones para probar el proyecto</h2>
+<h2 align="left">Instrucciones para probar el proyecto</h2>
 
 ###
 <p>Para comenzar con ProfeSort, sigue estos pasos:</p> 
