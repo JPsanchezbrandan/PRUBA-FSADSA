@@ -1,77 +1,64 @@
-<h1>Wiki - Proyecto Procoders</h1>
+<h1>Sistema de Ramas - GitFlow Adaptado para el Proyecto</h1>
 
-<p>
-  Bienvenido a la documentación oficial del proyecto ProfeSort del equipo <strong>Procoders</strong>.<br>
-</p>
+<h2>Objetivo del Sistema de Ramas</h2>
 
+<p>El propósito de este sistema es ordenar el desarrollo colaborativo entre los miembros del equipo, asegurando la estabilidad del código, el seguimiento del avance individual y la correcta integración final del sistema.</p>
 
-<hr>
+---
 
-<div align="center">
-  <h2>📂 Índice de contenidos</h2>
-  <ul style="list-style: none; padding-left: 0;">
-    <li>
-      <a href="https://github.com/ProCoders-ISPC/ProfeSort/wiki/Sistema-de-ramas">Sistema de ramas</a><br>
-      <small>Para ver cómo organizamos las ramas de nuestro proyecto.</small>
-    </li>
-    <li>
-      <a href="https://github.com/ProCoders-ISPC/ProfeSort/wiki/Requerimientos-(IEEE-830)-----Backlog">Requerimientos (IEEE 830) + Backlog</a><br>
-      <small>Encontrá la documentación y el listado de funcionalidades que vamos a desarrollar.</small>
-    </li>
-    <li>
-      <a href="https://github.com/ProCoders-ISPC/ProfeSort/wiki/Novedades-del-equipo-y-reuniones">Novedades del equipo y reuniones</a><br>
-      <small>Accedé a los resúmenes de nuestras reuniones y decisiones importantes.</small>
-    </li>
-    <li>
-      <a href="#convenciones">Convenciones de nomenclatura y escritura del proyecto</a><br>
-      <small>Revisá nuestras reglas para escribir código claro y consistente en HTML, CSS y Angular.</small>
-    </li>
-  </ul>
-</div>
+<h2>Estructura de Ramas Principal</h2>
 
-<hr>
+<ul>
+  <li><strong>main</strong>: rama de <strong>producción</strong>, contiene solo versiones completamente estables y listas para entrega.</li>
+  <li><strong>release</strong>: rama <strong>transitoria</strong> usada para pruebas finales antes de pasar a <code>main</code>.</li>
+  <li><strong>develop</strong>: rama de <strong>desarrollo general</strong>, contiene la integración más actual del proyecto. Es la base para las subramas de cada desarrollador.</li>
+</ul>
 
-<div align="center">
+---
 
-  <h2>Equipo de Desarrollo</h2>
+<h2>Subramas por Desarrollador</h2>
 
-  <table>
-    <tr>
-      <td>
-        <a href="https://github.com/Malvadapapa" target="_blank">Cristian Vargas</a><br>
-        <strong>Scrum Master</strong><br>
-        <a href="mailto:cristian.v62@gmail.com">cristian.v62@gmail.com</a>
-      </td>
-      <td>
-        <a href="https://github.com/danicba03" target="_blank">Daniel Paez</a><br>
-        Desarrollador<br>
-        <a href="mailto:dani.mercadolibre03@gmail.com">dani.mercadolibre03@gmail.com</a>
-      </td>
-      <td>
-        <a href="https://github.com/juangioda" target="_blank">Juan Ignacio Gioda</a><br>
-        Desarrollador<br>
-        <a href="mailto:juangioda@gmail.com">juangioda@gmail.com</a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/JPsanchezbrandan" target="_blank">Juan Pablo Sánchez</a><br>
-        Desarrollador<br>
-        <a href="mailto:jpsanchezbrandan@gmail.com">jpsanchezbrandan@gmail.com</a>
-      </td>
-      <td>
-        <a href="https://github.com/KaryQuinteros" target="_blank">Karina Quinteros</a><br>
-        Desarrolladora<br>
-        <a href="mailto:karinaq38@gmail.com">karinaq38@gmail.com</a>
-      </td>
-      <td>
-        <a href="https://github.com/lauzarg" target="_blank">Laura Zarate</a><br>
-        Desarrolladora<br>
-        <a href="mailto:lauzarg@gmail.com">lauzarg@gmail.com</a>
-      </td>
-    </tr>
-  </table>
+<p>Cada integrante del equipo desarrollará sus tareas en una subrama que nace desde <code>develop</code>. Esto nos permite trabajar de manera aislada, ordenada y con mayor claridad de responsabilidades.</p>
 
-</div>
+<h4>Nombres de las subramas:</h4>
 
-<hr>
+<pre><code>develop/juanpablo
+develop/juanigna
+develop/cristian
+develop/lau
+develop/kary
+develop/dani
+</code></pre>
+
+<p><strong>Regla:</strong> cada desarrollador <em>solo realiza commits en su subrama</em>.</p>
+
+---
+
+<h2>⚙Flujo de Trabajo Propuesto</h2>
+
+<ol>
+  <li>Crear subrama personal desde <code>develop</code>:
+    <pre><code>git checkout develop
+git pull origin develop
+git checkout -b develop/juanpablo
+</code></pre>
+  </li>
+
+  <li>Trabajar y hacer commits en la subrama personal.</li>
+
+  <li>Una vez que una tarea está lista:
+    <ul>
+      <li>Hacer merge a <code>develop</code> mediante Pull Request (PR).</li>
+      <li>Otro integrante revisa el PR.</li>
+      <li>Si todo está correcto, se aprueba y se fusiona a <code>develop</code>.</li>
+    </ul>
+  </li>
+
+  <li>Cuando se cumple un conjunto de tareas y el proyecto está estable:
+    <ul>
+      <li>Se crea una rama <code>release</code> desde <code>develop</code>.</li>
+      <li>Se hacen pruebas finales.</li>
+      <li>Si está todo OK, se fusiona a <code>main</code>.</li>
+    </ul>
+  </li>
+</ol>
