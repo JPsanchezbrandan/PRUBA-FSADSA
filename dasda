@@ -1,0 +1,64 @@
+<h1>Sistema de Ramas - GitFlow Adaptado para el Proyecto</h1>
+
+<h2>Objetivo del Sistema de Ramas</h2>
+
+<p>El propósito de este sistema es ordenar el desarrollo colaborativo entre los miembros del equipo, asegurando la estabilidad del código, el seguimiento del avance individual y la correcta integración final del sistema.</p>
+
+---
+
+<h2>Estructura de Ramas Principal</h2>
+
+<ul>
+  <li><strong>main</strong>: rama de <strong>producción</strong>, contiene solo versiones completamente estables y listas para entrega.</li>
+  <li><strong>release</strong>: rama <strong>transitoria</strong> usada para pruebas finales antes de pasar a <code>main</code>.</li>
+  <li><strong>develop</strong>: rama de <strong>desarrollo general</strong>, contiene la integración más actual del proyecto. Es la base para las subramas de cada desarrollador.</li>
+</ul>
+
+---
+
+<h2>Subramas por Desarrollador</h2>
+
+<p>Cada integrante del equipo desarrollará sus tareas en una subrama que nace desde <code>develop</code>. Esto nos permite trabajar de manera aislada, ordenada y con mayor claridad de responsabilidades.</p>
+
+<h4>Nombres de las subramas:</h4>
+
+<pre><code>develop/juanpablo
+develop/juanigna
+develop/cristian
+develop/lau
+develop/kary
+develop/dani
+</code></pre>
+
+<p><strong>Regla:</strong> cada desarrollador <em>solo realiza commits en su subrama</em>.</p>
+
+---
+
+<h2>⚙Flujo de Trabajo Propuesto</h2>
+
+<ol>
+  <li>Crear subrama personal desde <code>develop</code>:
+    <pre><code>git checkout develop
+git pull origin develop
+git checkout -b develop/juanpablo
+</code></pre>
+  </li>
+
+  <li>Trabajar y hacer commits en la subrama personal.</li>
+
+  <li>Una vez que una tarea está lista:
+    <ul>
+      <li>Hacer merge a <code>develop</code> mediante Pull Request (PR).</li>
+      <li>Otro integrante revisa el PR.</li>
+      <li>Si todo está correcto, se aprueba y se fusiona a <code>develop</code>.</li>
+    </ul>
+  </li>
+
+  <li>Cuando se cumple un conjunto de tareas y el proyecto está estable:
+    <ul>
+      <li>Se crea una rama <code>release</code> desde <code>develop</code>.</li>
+      <li>Se hacen pruebas finales.</li>
+      <li>Si está todo OK, se fusiona a <code>main</code>.</li>
+    </ul>
+  </li>
+</ol>
